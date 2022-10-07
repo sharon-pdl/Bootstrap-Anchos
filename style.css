@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none; /*las listas no van a tener ningun estilo*/
+    text-decoration: none; /* si hacemos un hipervinculo no va a aparecer subrayado*/
+    font-family: sans-serif;
+    box-sizing: border-box;/*el borde de cada caja no suma*/
+}
+
+.contenedor{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.fila{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    clear: both; /*GUGLIAR*/
+    display: table;/*GUGLIAR*/
+}
+
+/*Defino la clase 12 columnas
+todo se divide en 12 columnas*/
+
+/*Defino un comodin donde guardo todo lo que van a compartir
+las columnas en comun para que despues solo le tengamos
+que dar el porcentaje de ancho que ocuparan*/
+
+[class*="col-"]{
+    float:left; /*agrega cosas de izq a derecha*/
+    border: 1px solid black; /*le damos un borde para que se vea*/
+    padding: 10px; /*le da un padding para que la letra no este pegada al borde*/ 
+}
+
+.col-1{
+    width:8.33333333%;
+    background: rgb(6, 232, 134);
+    
+}
+
+.col-2{
+    width:16.666666667%;
+    background: cadetblue;
+    
+}
+
+
+.col-3{
+    width:25%;
+    background: aqua;
+}
+
+.col-4{
+    width: 33.33333333%;
+    background: cornflowerblue;
+}
+
+.col-5{
+    width: 41.6666666667%;
+    background: coral;
+    
+}
+
+.col-6{
+    width: 50%;
+    background: gold
+}
+
+.col-7{
+    width:58.33333333%;
+    background: mediumspringgreen;
+    
+}
+.col-8{
+    width: 66.66666667%;
+    background: royalblue;
+    
+}
+.col-9{
+    width:75%;
+    background: violet;
+    
+}
+.col-10{
+    width:83.33333333%;
+    background: thistle
+    
+}
+
+.col-11{
+    width:91.666666%;
+    background: rgb(155, 86, 212);
+}
+
+.col-12{
+    width: 100%;
+    background: hotpink;
+}
